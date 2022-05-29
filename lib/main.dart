@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
                   padding: EdgeInsets.only(bottom: 10.0),
                   // ignore: prefer_const_constructors
                   child: Text(
-                    "Currently in your location",
+                    "Currently in Vadodara",
                     style: TextStyle(
                         color: Colors.white70,
                         fontSize: 14.0,
