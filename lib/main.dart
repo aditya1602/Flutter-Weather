@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
           Container(
             height: MediaQuery.of(context).size.height / 2,
             width: MediaQuery.of(context).size.width,
-            color: Colors.red,
+            color: Colors.blue,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Text(
-                  temp != null ? temp.toString() + "\u00b0" : "loading",
+                  temp != null ? temp.toString() + "\u00b0C" : "loading",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 50,
@@ -102,7 +102,7 @@ class _HomeState extends State<Home> {
                     leading: FaIcon(FontAwesomeIcons.thermometerHalf),
                     title: Text("Temperature"),
                     trailing: Text(
-                        temp != null ? temp.toString() + "\u00B0" : "loading"),
+                        temp != null ? temp.toString() + "\u00B0C" : "loading"),
                   ),
                   ListTile(
                     // ignore: deprecated_member_use
@@ -124,7 +124,7 @@ class _HomeState extends State<Home> {
                     leading: FaIcon(FontAwesomeIcons.wind),
                     title: Text("Wind Speed"),
                     trailing: Text(
-                        windSpeed != null ? windSpeed.toString() : "Loading"),
+                        windSpeed != null ? windSpeed.toString() + " km/h": "Loading"),
                   )
                 ],
               ),
