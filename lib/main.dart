@@ -49,12 +49,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(title: const Text("Weather App",style:TextStyle(fontSize:25.0),)),
+      backgroundColor:Colors.purple[200],
       body: Column(
         children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height / 2,
+            height: MediaQuery.of(context).size.height / 2.5,
             width: MediaQuery.of(context).size.width,
-            color: Colors.blue,
+            color: Colors.deepPurple[800],
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,7 +96,9 @@ class _HomeState extends State<Home> {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.all(20.0),
+              //padding: EdgeInsets.only(top:50.0,bottom:20.0),
+             //padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
+              padding: EdgeInsets.fromLTRB(10.0, 55.0 ,10.0 ,20.0), 
               child: ListView(
                 children: <Widget>[
                   ListTile(
