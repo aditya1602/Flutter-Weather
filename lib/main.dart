@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
           Container(
             height: MediaQuery.of(context).size.height / 2,
             width: MediaQuery.of(context).size.width,
-            color: Colors.blue,
+            color: Colors.deepPurple,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
